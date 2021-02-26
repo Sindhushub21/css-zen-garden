@@ -30,7 +30,16 @@ h3 {
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
 	color: #7D775C;
-	}
+
+}
+
+/*Sindhura Chanda: Adding it for transitions*/
+a
+{
+	font-size: 10px;
+	transition: font-size 4s 1s;
+}
+
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
@@ -43,11 +52,30 @@ a:visited {
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
-	color: #9685BA;
+	color: #ba8b85;
+	font-size: 20px;/*Sindhura Chanda adding it for transitions*/
 	}
 abbr {
 	border-bottom: none;
 	}
+
+/* Sindhura Chanda: Demonstrating the use of pseudo elements for CSS training*/
+/* Make the first letter of a paragraph bigger and bold*/
+p::first-letter {
+  font-size: 130%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*
+    Sindhura Chanda: Demonstrating the use of pseudo classes and elements
+    We are saying that we want to select the first line, of the first <p>
+    element, which is inside an <article> element.*/
+.intro p:first-child::first-letter {
+  font-size: 200%;
+  color:blueviolet;
+  font-weight: bold;
+}
 
 
 /* specific divs */
